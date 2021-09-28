@@ -4,7 +4,8 @@
   "description": "An art blog and virtual exhibit for local artists to display their work and for lovers of art to to connect to the artists, like, buy, collaborate.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
