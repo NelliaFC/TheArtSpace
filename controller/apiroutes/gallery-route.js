@@ -1,0 +1,1 @@
+//Route where we post all the blog posts of Art

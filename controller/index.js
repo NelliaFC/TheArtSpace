@@ -1,0 +1,1 @@
+//Combines all the page routes to later connect to Handlebars.
