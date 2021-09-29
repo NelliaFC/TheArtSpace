@@ -1,0 +1,1 @@
+//consolidated api routes only from api routes AND add part of the endpoints

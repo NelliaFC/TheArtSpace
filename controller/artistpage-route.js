@@ -1,0 +1,1 @@
+//routes  to that particular artist page wher you can buy art.

@@ -1,1 +1,1 @@
-//Combines all the page routes to later connect to Handlebars.
+//Combines all the page routes to later connect to PUblic JS and then to Handlebars.
