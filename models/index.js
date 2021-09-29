@@ -3,3 +3,4 @@ const Post = require('./post')
 const User = require('./user')
 const Comments = require('./comments')
 
+//create associations  to models
