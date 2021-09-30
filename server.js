@@ -6,7 +6,9 @@ const helpers = require('./utils/helpers');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-//insert handlebars setting HERE
+app.engine('handlebars', exphbs({ defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+
 const sequelize = require("./config/config.js");
 
 
