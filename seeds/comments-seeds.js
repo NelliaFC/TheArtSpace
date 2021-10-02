@@ -5,9 +5,9 @@ const sequelize = require('../config/config');
 
 
 const commentdata = [
-    {
-      title: '',
-      author: 'username',
-      
-    },
+  {
+    comment_text: 'This art is amazing',
+    user_id: 6,
+    post_id: 1
+  },
 ]

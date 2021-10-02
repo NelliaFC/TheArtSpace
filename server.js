@@ -18,11 +18,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 
 
-app.use(require('./controllers/'));
+app.use(require('./controllers'));
 
-sequelize.sync({force: false})
-.then(
-  () => { app.listen(PORT, () => console.log(`Team cool server is up and running  on port ${PORT}!`))}
+//sync sequelize models to the database, then turn on the server
+sequelize.sync({force: false}).then(() => 
+  { app.listen(PORT, () => console.log(`Team cool server is up and running  on port ${PORT}!`))}
 )
 
 
