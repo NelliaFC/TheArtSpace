@@ -1,5 +1,6 @@
-const Artist = require('../models/artist-seeds.js');
+const Artist = require('../models');
 const sequelize = require('../config/config');
+
 
 const artistdata = [
     {
@@ -9,3 +10,6 @@ const artistdata = [
       price: '1000'
     },
 ]
+const seedArtist = () => Post.bulkCreate(artistdata);
+
+module.exports = seedArtist;
