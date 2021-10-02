@@ -1,4 +1,4 @@
-const Artist = require('../models/fakedatamodel.js');
+const Artist = require('../models/artist-seeds.js');
 const sequelize = require('../config/config');
 
 const artistdata = [
