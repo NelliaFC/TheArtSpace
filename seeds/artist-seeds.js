@@ -3,9 +3,9 @@ const sequelize = require('../config/config');
 
 const artistdata = [
     {
-      title: 'Pachinko',
-      author: 'Min Jin Lee',
-      genre: 'Fiction',
-      pages: 496
+      title: 'Waterfall',
+      author: 'Kyla Scott',
+      genre: 'Abstract',
+      price: '1000'
     },
 ]
