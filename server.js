@@ -12,11 +12,18 @@ app.set('view engine', 'handlebars');
 const sequelize = require("./config/config.js");
 
 
+
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, "public")));
 
 
+app.use(require('./controllers/'));
 
-app.listen(3001, () => {
-    console.log(`API server now on port 3001!`);
-  });
+sequelize.sync({force: false})
+.then(
+  () => { app.listen(PORT, () => console.log(`Team cool server is up and running  on port ${PORT}!`))}
+)
+
+
   
