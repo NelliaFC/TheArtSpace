@@ -1,5 +1,5 @@
-const Comment = require('../models/comments-seeds.js');
-const sequelize = require('../config/config');
+const Comments = require('../models/Comments');
+
 
 
 
@@ -12,6 +12,6 @@ const commentdata = [
   },
 ]
 
-const seedComments = () => Comment.bulkCreate(commentdata);
+const seedComments = () => Comments.bulkCreate(commentdata);
 
 module.exports = seedComments;

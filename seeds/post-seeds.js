@@ -1,5 +1,5 @@
-const Post = require('../models');
-const sequelize = require('../config/config.js');//not sure if need it in seedUsers
+const Post = require('../models/Post');
+
 
 
 const postdata = [

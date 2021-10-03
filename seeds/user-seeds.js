@@ -1,16 +1,15 @@
-const sequelize = require('../config/config.js');
-
-const User = require('../models')
+const User = require('../models/User');
 
 const userdata = [
 {
+    id: 1,
     username: 'nellbell1',
     email: 'localhost',
     password: 'password123'
 }
 ]
+//hooks = true for the bcrypt model to work
+const seedUser = () => User.bulkCreate(userdata);
 
-const seedUsers = () => User.bulkCreate(userdata, {individualHooks: true});
 
-
-module.exports = seedUsers;
+module.exports = seedUser;
