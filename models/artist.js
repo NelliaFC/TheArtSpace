@@ -6,7 +6,7 @@ class Artist extends Model {}
 Artist.init ({
 
 title: {
-  type: DataTypes.STR,
+  type: DataTypes.STRING,
   allowNull: false,
   validate: {len: [1]}
 },
@@ -19,7 +19,7 @@ validate: {len: [1]
   },
 
 genre: {
-  type: DataTypes.STR,
+  type: DataTypes.STRING,
   allowNull: false,
   validate: {len: [1]}
 },
@@ -35,8 +35,8 @@ price: {
   timestamps: false,
   freezeTableName: true,
   underscored: true,
-  modelName: 'artist',  
+  modelName: 'Artist',  
 }
 );
 
-module.export = Artist
+module.export = Artist;

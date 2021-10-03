@@ -1,1 +1,1 @@
-//Route where we post all the blog posts of Art
+//Route where posts are done (POST MODEL route) all the blog posts of Art

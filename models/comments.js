@@ -5,11 +5,23 @@ class Comment extends Model{}
 
 Comment.init(
 {
-    body: {
+    comment_text: {
         type: DataTypes.STRING,
         allowNull: false
-    }
+    },
+    user_id: {
+        type:DataTypes.INTEGER,
+    },
+    post_id: {
+        type: DataTypes.INTEGER,
+    },
+
 },
-{ sequelize}
+{ sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'comments',
+}
 );
 module.export = Comment;
