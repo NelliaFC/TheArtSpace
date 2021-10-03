@@ -11,9 +11,11 @@ const PORT = process.env.PORT || 3001;
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
-const hbs = exphbs.create({ helpers });
+//const hbs = exphbs.create({ helpers });
 
 const sequelize = require("./config/config.js");
+
+
 
 
 // const sess = {
