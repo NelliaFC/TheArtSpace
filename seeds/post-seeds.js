@@ -5,8 +5,9 @@ const Post = require('../models/Post');
 const postdata = [
   {
     title: 'Donec posuere metus vitae ipsum.',
-    content: 'This is going to be the example of the post content',
-    user_id: 10
+    image: "image",
+    body: 'This is going to be the example of the post content',
+    category: 'abstract'
   },
 ]
 

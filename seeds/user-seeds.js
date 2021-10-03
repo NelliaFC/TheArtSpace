@@ -2,10 +2,17 @@ const User = require('../models/User');
 
 const userdata = [
 {
-    id: 1,
+   
     username: 'nellbell1',
     email: 'localhost',
-    password: 'password123'
+    password: 'password123',
+},
+
+{
+   
+    username: 'nellbell1',
+    email: 'localhost',
+    password: 'password123',
 }
 ]
 //hooks = true for the bcrypt model to work

@@ -6,7 +6,7 @@ const { Artist, Comment, Post, User } = require("../models");
 //Get all rounts from home page
 
 router.get("/", (req, res) => {
-    res.render('homepage')
+    res.render('gallery')
 })
 
 module.exports = router;

@@ -2,7 +2,7 @@
 
 const router = require('express').Router();
 
-//const apiRoutes = require('./api/');
+//const apiRoutes = require('./api/'); then list out each route PER folder of API routes
 const homeRoutes = require('./home-routes.js');
 //const artistpageRoutes = require('./artistpage-route.js');
 //const userprofileRoutes = require('./user-profile-routes.js');
