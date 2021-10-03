@@ -11,7 +11,6 @@ title: {
   validate: {len: [1]}
 },
 
-
 author: {
 type: DataTypes.STRING,
 allowNull: false,
@@ -32,7 +31,12 @@ price: {
 },
 
 },
-{ sequelize }
+{ sequelize,
+  timestamps: false,
+  freezeTableName: true,
+  underscored: true,
+  modelName: 'artist',  
+}
 );
 
 module.export = Artist
