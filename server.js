@@ -6,10 +6,28 @@ const helpers = require('./utils/helpers');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+//Helpers for Handlebars
+
 app.engine('handlebars', exphbs({ defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
+const hbs = exphbs.create({ helpers });
 
 const sequelize = require("./config/config.js");
+
+
+// const sess = {
+//   secret:'',
+//   cookie: {},
+//   resave: false,
+//   saveUninitialized: true,
+//   store: new Sequelize.Store({
+//     db: sequelize
+//   })
+// }
+
+//app.use(session(sess));
+
 
 
 
