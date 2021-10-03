@@ -5,7 +5,7 @@ class Comments extends Model{}
 
 Comments.init(
 {
-    comment_text: {
+    comments_text: {
         type: DataTypes.STRING,
         allowNull: false
     },
@@ -24,4 +24,4 @@ Comments.init(
     modelName: 'comments',
 }
 );
-module.export = Comments;
+module.exports = Comments;

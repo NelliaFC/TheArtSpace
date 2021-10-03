@@ -26,7 +26,7 @@ genre: {
 
 price: {
   type: DataTypes.INTEGER,
-  allowNull: false,
+  allowNull: false,  
   validate: {len: [1]}
 },
 
@@ -35,8 +35,8 @@ price: {
   timestamps: false,
   freezeTableName: true,
   underscored: true,
-  modelName: 'Artist',  
+  modelName: 'artist',  
 }
 );
 
-module.export = Artist;
+module.exports = Artist;
