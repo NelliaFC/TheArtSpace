@@ -2,14 +2,17 @@
 
 const router = require('express').Router();
 
-//const apiRoutes = require('./api/'); then list out each route PER folder of API routes
+const apiRoutes = require('./apiroutes');
+const userRoutes = require('./apiroutes/user-auth')
+    //then list out each route PER folder of API routes
 const homeRoutes = require('./home-routes.js');
 //const artistpageRoutes = require('./artistpage-route.js');
 //const userprofileRoutes = require('./user-profile-routes.js');
 
 router.use('/', homeRoutes);
-//router.use('/artistpage', artistpageRoutes);
-//router.use('/api', apiRoutes);
-//router.use('/user', userprofileRoutes);
+router.use('/api/users', userRoutes)
+    //router.use('/artistpage', artistpageRoutes);
+    //router.use('/api', apiRoutes);
+    //router.use('/user', userprofileRoutes);
 
 module.exports = router;

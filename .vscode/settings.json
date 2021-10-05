@@ -1,0 +1,17 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "the_art_space_db;",
+      "database": "the_art_space_db;",
+      "username": "root",
+      "password": "Cejg0SOib"
+    }
+  ]
+}

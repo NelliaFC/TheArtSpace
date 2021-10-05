@@ -6,7 +6,15 @@ const { Artist, Comment, Post, User } = require("../models");
 //Get all routes from home page
 
 router.get("/", (req, res) => {
-    res.render('gallery')
+
+    // GO TO DB and get all the POsts Post.findAll()
+
+    var fakePosts = [{ title: 'First Post' }, { title: ' Second post' }]
+
+    res.render('gallery', { posts: fakePosts })
 })
 
+router.get("/login", (req, res) => {
+    res.render('login')
+})
 module.exports = router;
