@@ -6,8 +6,8 @@ Showing all the posts from the DB on the homepage
 
 
 High Priority
-Login/signup
-     api route /login and /signup
+Login/signup: Done
+     api route /login and /signup : Done
      handlebar route give them handelbars
 
 Page where you can make a new blog post - FORM and save to DB
