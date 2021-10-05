@@ -15,7 +15,7 @@ async function loginFormHandler(event) {
         });
 
         if (response.ok) {
-            document.location.replace('/personalprofile/');
+            document.location.replace('/');
         } else {
             alert("Incorrect email or password");
         }
@@ -41,7 +41,7 @@ async function signupFormHandler(event) {
         });
 
         if (response.ok) {
-            document.location.replace('/dashboard/');
+            document.location.replace('/');
         } else {
             alert("Please enter the correct information");
         }

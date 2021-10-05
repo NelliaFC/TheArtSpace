@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3001;
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
-const hbs = exphbs.create({ helpers });
+//const hbs = exphbs.create({ helpers });
 
 const sequelize = require("./config/config.js");
 
@@ -19,13 +19,13 @@ const sequelize = require("./config/config.js");
 
 
 const sess = {
-    secret: '',
+    secret: 'keyboard cat',
     cookie: {},
     resave: false,
     saveUninitialized: true,
-    store: new Sequelize.Store({
-        db: sequelize
-    })
+    // store: new Sequelize.Store({
+    //     db: sequelize
+    // })
 }
 
 app.use(session(sess));
