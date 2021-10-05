@@ -10,9 +10,9 @@ router.get("/", (req, res) => {
       include: [User],
     })
       .then((dbPostData) => {
-        const posts = dbPostData.map((post) => post.get({ plain: true }));
+        const galleryPosts = dbPostData.map((post) => post.get({ plain: true }));
   
-        res.render("all-posts", { posts });//change 'all-posts' ??
+        res.render("gallery", { galleryPosts });
       })
       .catch((err) => {
         res.status(500).json(err);
@@ -46,9 +46,9 @@ router.get("/post/:id", (req, res) => {
   })
     .then((dbPostData) => {
       if (dbPostData) {
-        const post = dbPostData.get({ plain: true });
+        const galleryPosts = dbPostData.get({ plain: true });
 
-        res.render("single-post", { post });
+        res.render("gallery", {galleryPosts});
       } else {
         res.status(404).end();
       }
