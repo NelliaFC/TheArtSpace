@@ -29,9 +29,9 @@ Post.init({
         type: DataTypes.STRING,
         defaultValue: 'Personal'
     },
-    user_id: {
-        type: DataTypes.INTEGER,
-    }
+    // user_id: {
+    //     type: DataTypes.INTEGER,
+    // }
 }, {
     sequelize,
     timestamps: false,
