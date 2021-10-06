@@ -9,9 +9,11 @@ const artistpageRoute = require('./artistpage-route');
 //const userprofileRoute = require('./user-profile-routes.js');
 
 router.use('/', homeRoutes);
-router.use('/api/users', userRoutes);
-//router.use('/artistpage', artistpageRoutes);
+router.use('/api/users', userRoutes)
+    //router.use('/artistpage', artistpageRoutes);
+    //router.use('/api', apiRoutes);
 router.use('/api', apiRoutes);
-//router.use('/user', userprofileRoutes);
+
+    //router.use('/user', userprofileRoutes);
 
 module.exports = router;
