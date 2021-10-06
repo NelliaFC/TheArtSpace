@@ -11,7 +11,8 @@ router.get("/", (req, res) => {
 
     var fakePosts = [{ title: 'First Post' }, { title: ' Second post' }]
 
-    res.render('gallery', { posts: fakePosts })
+    res.render('newpost' , {user_id : req.session.id })
+    //res.render('gallery', { posts: fakePosts })
 })
 
 router.get("/login", (req, res) => {
