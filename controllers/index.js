@@ -12,7 +12,10 @@ const artistpageRoute = require('./artistpage-route');
 router.use('/', homeRoutes);
 router.use('/api/users', userRoutes)
     //router.use('/artistpage', artistpageRoutes);
+    //router.use('/api', apiRoutes);
+=======
 router.use('/api', apiRoutes);
+
     //router.use('/user', userprofileRoutes);
 
 module.exports = router;
