@@ -1,13 +1,14 @@
-const Comment = require('../models/comments-seeds.js');
-const sequelize = require('../config/config');
-
-
+const Comments = require('../models/Comments');
 
 
 const commentdata = [
-    {
-      title: '',
-      author: 'username',
-      
-    },
+  {
+    comments_text: 'This art is amazing',
+    user_id: 6,
+    post_id: 1
+  },
 ]
+
+const seedComments = () => Comments.bulkCreate(commentdata);
+
+module.exports = seedComments;

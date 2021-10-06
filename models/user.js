@@ -19,9 +19,14 @@ User.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        username: {
+       username: {
+           type: DataTypes.STRING,
+           allowNull: false,
+        },
+        email: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false, 
+        
         },
         password: {
             type: DataTypes.STRING,
@@ -46,7 +51,8 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'User', //might have to use 'user'
+    modelName: 'user', //might have to use 'user'
    }
 
 )
+module.exports = User;
