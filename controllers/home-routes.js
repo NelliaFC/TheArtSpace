@@ -7,6 +7,7 @@ const { Artist, Comments, Post, User } = require("../models");
 router.get('/', async (req, res) => {
   try {
     const postData = await Post.findAll({
+      //  include: [User]
     
     });
     const posts = postData.map((post) => post.get({ plain: true }));
