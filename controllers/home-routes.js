@@ -27,8 +27,7 @@ router.get('/', async (req, res) => {
 
     res.render('newpost' , {user_id : req.session.id })
     //res.render('gallery', { posts: fakePosts })
-})
-=======
+
 //     //var fakePosts = [{ title: 'First Post' }, { title: ' Second post' }]
 //   var fakePosts = Post.findAll()
 //     res.render('gallery', { posts: fakePosts })
