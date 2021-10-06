@@ -34,46 +34,46 @@ router.get("/", (req, res) => {
 // })
 
 // get single post
-// router.get("/gallery/:id", (req, res) => {
-//   Post.findByPk(req.params.id, {
-//     include: [
-//       User,
-//       {
-//         model: Comments,
-//         include: [User],
-//       },
-//     ],
-//   })
-//     .then((dbPostData) => {
-//       if (dbPostData) {
-//         const galleryPosts = dbPostData.get({ plain: true });
+router.get("/gallery/:id", (req, res) => {
+  Post.findByPk(req.params.id, {
+    include: [
+      User,
+      {
+        model: Comments,
+        include: [User],
+      },
+    ],
+  })
+    .then((dbPostData) => {
+      if (dbPostData) {
+        const galleryPosts = dbPostData.get({ plain: true });
 
-//         res.render("gallery", {galleryPosts});
-//       } else {
-//         res.status(404).end();
-//       }
-//     })
-//     .catch((err) => {
-//       res.status(500).json(err);
-//     });
-// });
+        res.render("gallery", {galleryPosts});
+      } else {
+        res.status(404).end();
+      }
+    })
+    .catch((err) => {
+      res.status(500).json(err);
+    });
+});
 
-// router.get("/login", (req, res) => {
-//   if (req.session.loggedIn) {
-//     res.redirect("/");
-//     return;
-//   }
+router.get("/login", (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect("/");
+    return;
+  }
 
-//   res.render("login");
-// });
+  res.render("login");
+});
 
-// router.get("/signup", (req, res) => {
-//   if (req.session.loggedIn) {
-//     res.redirect("/");
-//     return;
-//   }
+router.get("/signup", (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect("/");
+    return;
+  }
 
-//   res.render("signup");
-// });
+  res.render("signup");
+});
 
 module.exports = router;
