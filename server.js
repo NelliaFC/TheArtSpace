@@ -14,7 +14,7 @@ app.set('view engine', 'handlebars');
 //const hbs = exphbs.create({ helpers });
 
 const sequelize = require("./config/config.js");
-
+const SequelizeStore = require('connect-session-sequelize');
 
 
 
@@ -23,7 +23,7 @@ const sess = {
     cookie: {},
     resave: false,
     saveUninitialized: true,
-    // store: new Sequelize.Store({
+    // store: new SequelizeStore({
     //     db: sequelize
     // })
 }
