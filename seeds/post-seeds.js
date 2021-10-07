@@ -8,6 +8,7 @@ const postdata = [
     image: "image",
     body: 'This is going to be the example of the post content',
     category: 'abstract'
+  
   },
 ]
 

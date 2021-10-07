@@ -7,7 +7,7 @@ const { Artist, Comments, Post, User } = require("../models");
 router.get('/', async (req, res) => {
   try {
     const postData = await Post.findAll({
-      //  include: [User]
+      // include: [User]
     
     });
     const posts = postData.map((post) => post.get({ plain: true }));
@@ -18,15 +18,19 @@ router.get('/', async (req, res) => {
 });
 // router.get("/", (req, res) => {
 
+// router.get("/", (req, res) => {
+
+
 //     // GO TO DB and get all the POsts Post.findAll()
 
+//     var fakePosts = [{ title: 'First Post' }, { title: ' Second post' }]
 
-    // GO TO DB and get all the POsts Post.findAll()
 
-    var fakePosts = [{ title: 'First Post' }, { title: ' Second post' }]
+//     res.render('gallery', { posts: fakePosts })
+//     res.render('newpost' , {user_id : req.session.id })
+//     //res.render('gallery', { posts: fakePosts })
 
-    res.render('newpost' , {user_id : req.session.id })
-    //res.render('gallery', { posts: fakePosts })
+// })
 
 //     //var fakePosts = [{ title: 'First Post' }, { title: ' Second post' }]
 //   var fakePosts = Post.findAll()

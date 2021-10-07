@@ -30,7 +30,7 @@ Post.init({
         defaultValue: 'Personal'
     },
     user_id: {
-        type: DataTypes.INTEGER, 
+        type: DataTypes.STRING, //maybe integer
     }
 }, {
     sequelize,

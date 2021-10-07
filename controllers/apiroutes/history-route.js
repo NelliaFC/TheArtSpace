@@ -8,7 +8,7 @@ const withAuth = require('../../utils/auth')
 router.get('/', withAuth, async(req, res)=>{
     try{
         const historyData = await Favorites.findAll({
-            include:[User]
+            // include:[User]
         })
 
         const history = historyData.map((data) => data.get({plain: true}))
