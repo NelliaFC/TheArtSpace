@@ -1,10 +1,29 @@
 
+{{!-- <ol class="home-routes">
+  <li>
+    <article class="post">
+      <div class="title">
+        <a href="{{post_url}}" target="_blank">{{title}}</a>
+        <span>({{post_url}})</span>
+      </div>
+      <div class="meta">
+        {{vote_count}} point(s) by {{user.username}} on
+        {{created_at}}
+        |
+        <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
+      </div>
+    </article>
+  </li>
+</ol> --}}
+
+<button id="createArtBtn" >Create New Art Post</button>
+
+
 
 <button id="createArtBtn" >Create New Art Post</button>
 
 <section id="artForm">
   <h2>Create New Art Post</h2>
-
   <form class="new-art-form">
     <div>
       <label for="art-title">Title</label>
@@ -21,7 +40,6 @@
     <button type="submit" class="btn">Create</button>
   </form>
 </section>
-
 {{#if art.length}}
 <section id="blogArt">
   <h2>Your Art</h2>
@@ -40,6 +58,12 @@
 <script src="/js/comments.js"></script>
 <script src=""></script>
 
+
+<script src="/js/add-art.js"></script>
+<script src="/js/comments.js"></script>
+<script src=""></script>
+
+
 <ol class="home-routes">
   <li>
     <article class="post">
@@ -55,6 +79,10 @@
       </div>
     </article>
   </li>
+
+</ol>
+</ol>
+
 
 </ol>
 
