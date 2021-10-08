@@ -19,7 +19,7 @@ router.post("/", (req, res) => {
             });
         })
         .catch(err => {
-            console.log(err);
+            console.log('NO USER FOUND, PLEASE SIGN UP');
             res.status(500).json(err);
         });
 });
