@@ -5,9 +5,10 @@
         <div class="container">
           <h1 class="jumbotron-heading">Kyla's Art Gallery</h1>
           <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-          
+
             <button type="signup" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">login</button>
             <a href="/login" class="btn btn-secondary my-2">Login</a>
+
           
         </div>
       </section>
@@ -76,6 +77,9 @@
                 <div class="card-title">
                   <p class="card-text"> The Trench</p>
                 <div class="card-body">
+
+                  <p class="card-text">I have a bucket list wish to stare into The Mariana Trench and just fathom its depth. This is </p>
+
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
@@ -93,48 +97,6 @@
                 <div class="card-title">
                   <p class="card-text"> I am Here</p>
                   <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer
-                    {{#each posts}}
-<h4> Title: {{title}}</h4>
-{{/each}}
-
-
-{{#each posts}}
-<h4> Title: {{title}}</h4>
-<h4> Image: {{image}}</h4>
-<h1> Body: {{body}}</h1>
-<h1> Category: {{category}}</h1>
-<h1> id: {{user_id}}</h1>
-{{/each}}
-                    .</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                    {{#each posts}}
-<h1> Title: {{title}}</h1>
-{{/each}}
-
-
-{{#each posts}}
-<h1> Title: {{title}}</h1>
-<h1> Image: {{image}}</h1>
-<h1> Body: {{body}}</h1>
-<h1> Category: {{category}}</h1>
-<h1> id: {{user_id}}</h1>
-{{/each}}
-                  {{!-- </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://i.imgur.com/dUiREAl.jpeg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                <div class="card-title">
-                  <p class="card-text"> I am Here</p>
-                <div class="card-body">
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
@@ -145,8 +107,33 @@
                   </div>
                 </div>
               </div>
-            </div> --}}
-{{!-- 
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://i.imgur.com/dUiREAl.jpeg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                <div class="card-title">
+                  <p class="card-text"> I am Here</p>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+                   
+{{#each posts}}
+<h1> Title: {{title}}</h1>
+{{/each}}
+
+
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://i.imgur.com/ojEkvLO.jpeg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
@@ -188,13 +175,14 @@
             </div>
           </div>
         </div>
-      </div> --}}
+      </div>
 {{#each posts}}
 <h1> Title: {{title}}</h1>
 {{/each}}
 
+<h1>Hello world!</h1>
 
-{{#each posts}}
+{{#each galleryPosts}}
 <h1> Title: {{title}}</h1>
 <h1> Image: {{image}}</h1>
 <h1> Body: {{body}}</h1>
