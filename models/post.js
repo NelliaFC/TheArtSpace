@@ -32,12 +32,8 @@ Post.init(
     },
 
     user_id: {
-<<<<<<< HEAD
-        type: DataTypes.STRING, //maybe integer
-=======
       type: DataTypes.STRING,
 
->>>>>>> developer
     }
   },
   {
@@ -51,8 +47,3 @@ Post.init(
 
 module.exports = Post;
 
-  
-
-
-
-module.exports = Post;

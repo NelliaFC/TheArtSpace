@@ -1,16 +1,9 @@
 //gallery route (main page) includes "comments route"
 const router = require("express").Router();
 const sequelize = require("../config/config");
-const { Artist, Comment, Post, User } = require("../models");
+const { Artists, Comments, Post, User } = require("../models");
 const { restore } = require("../models/Artist");
 
-
-//Get all routes from home page
-router.get('/', async (req, res) => {
-  try {
-    const postData = await Post.findAll({
-      // include: [User]
-    
 
  // GO TO DB and get all the Posts Post.findAll()
 
@@ -66,16 +59,16 @@ router.get("/gallery/:id", (req, res) => {
       res.status(500).json(err);
 
     });
-});
+}),
 
 router.get("/login", (req, res) => {
   if (req.session.loggedIn) {
     res.redirect("/");
-    return;
+    return; ''
   }
 
   res.render("login");
-});
+}),
 
 router.get("/signup", (req, res) => {
   if (req.session.loggedIn) {
@@ -84,9 +77,9 @@ router.get("/signup", (req, res) => {
   }
 
   res.render("signup");
-});
+}),
 
-module.exports = router;
+module.exports = router
 
 // Get all routes from home page
 // router.get("/", async(req, res) => {
@@ -123,9 +116,6 @@ module.exports = router;
 
 //     res.render('gallery', { posts: fakePosts })
 // })
-const router = require('express').Router();
-const sequelize = require('../config/config');
-const { Artist, Comments, Post, User } = require('../models');
 
 //Get all routes from home page
 router.get('/', async (req, res) => {
@@ -139,7 +129,8 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/login', (req, res) => {
-  res.render('login');
-});
+// router.get('/login', (req, res) => {
+//   res.render('login');
+// });
+
 module.exports = router
