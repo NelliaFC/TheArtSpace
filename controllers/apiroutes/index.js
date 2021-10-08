@@ -2,8 +2,10 @@
 const router = require('express').Router();
 
 
+
 const favoriteRoutes = require('./favorites-route');
 router.use('/favorites', favoriteRoutes)
+
 
 const userRoute = require('./user-auth');
 //const postRoute = require('./post-route');
@@ -28,3 +30,6 @@ module.exports = router;
 // router.use('/favorites', favoriteRoutes)
 
 // module.exports = router
+
+module.exports = router;
+
