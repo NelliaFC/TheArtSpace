@@ -18,15 +18,7 @@ const SequelizeStore = require('connect-session-sequelize');
 
 
 
-const sess = {
-    secret: 'keyboard cat',
-    cookie: {},
-    resave: false,
-    saveUninitialized: true,
-    // store: new SequelizeStore({
-    //     db: sequelize
-    // })
-}
+
 
 const sess = {
     secret: 'keyboard cat',
