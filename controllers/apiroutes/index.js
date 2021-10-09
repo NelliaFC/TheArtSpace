@@ -2,20 +2,20 @@
 const router = require('express').Router();
 
 
+
 const favoriteRoutes = require('./favorites-route');
 router.use('/favorites', favoriteRoutes)
 
+
 const userRoute = require('./user-auth');
-const galleryRoute = require('./gallery-route');
+//const postRoute = require('./post-route');
 const commentRoute = require('./comments-route');
 const artistRoute = require('./artist-route');
-// const favoritesRoute = require('./favorites-route');
 
 router.use('/user', userRoute);
-router.use('/gallery', galleryRoute);
+//router.use('/post', postRoute);
 router.use('/comments', commentRoute);
 router.use('/artist', artistRoute);
-// router.use('/favorites', favoritesRoute);
 
 module.exports = router;
 
@@ -30,3 +30,6 @@ module.exports = router;
 // router.use('/favorites', favoriteRoutes)
 
 // module.exports = router
+
+module.exports = router;
+

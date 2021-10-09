@@ -5,3 +5,8 @@ const withAuth = require("../utils/auth");
 
 
 
+const router = require ("express").Router();
+const sequalize = require("../config/config");
+const { Artist, Comments, Post, User} = require("../models")
+
+

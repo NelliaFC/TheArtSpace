@@ -16,10 +16,11 @@ router.post("/", (req, res) => {
                 req.session.loggedIn = true;
 
                 res.json(dbUserData);
+            
             });
         })
         .catch(err => {
-            console.log('NO USER FOUND, PLEASE SIGN UP');
+            console.log(err);
             res.status(500).json(err);
         });
 });

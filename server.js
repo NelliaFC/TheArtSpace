@@ -28,6 +28,16 @@ const sess = {
     // })
 }
 
+const sess = {
+    secret: 'keyboard cat',
+    cookie: {},
+    resave: false,
+    saveUninitialized: true,
+    // store: new Sequelize.Store({
+    //     db: sequelize
+    // })
+}
+
 app.use(session(sess));
 
 
