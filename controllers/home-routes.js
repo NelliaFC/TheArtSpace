@@ -64,7 +64,7 @@ router.get("/gallery/:id", (req, res) => {
 router.get("/login", (req, res) => {
   if (req.session.loggedIn) {
     res.redirect("/");
-    return; ''
+    return; 
   }
 
   res.render("login");
