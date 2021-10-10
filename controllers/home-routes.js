@@ -92,4 +92,10 @@ router.get("/homepage", (req, res) => {
 router.get("/homepage", (req, res) => {
     res.render('logout')
 })
+router.get("/comments.js", (req, res) => {
+    res.render('comment')
+})
+router.get("/add-art.js", (req, res) => {
+    res.render('addart')
+})
 module.exports = router;
