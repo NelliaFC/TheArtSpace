@@ -28,16 +28,10 @@
     </div>
     <h1 class="app-title"><a href="/"></a></h1>
   </header>
-  <main class="col-auto">
-    {{{body}}}
-  </main>
-
-<body class="flex-column min-100-vh">
-
-  <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">The Art Space</a>
+        <a class="navbar-brand" href="/homepage">The Art Space</a>
       </div>
       <ul class="nav navbar-nav">
         <li class="li-inline nav-item"><a href="/homepage">Homepage</a></li>
@@ -53,7 +47,7 @@
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <button type="/login" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-user">Login</h4>
         </div>
         <div class="modal-body">
@@ -67,11 +61,13 @@
               <label for="pass">Password:</label>
               <input name="pass" type="password" class="form-control" id="pass">
             </div>
-            <button type="/login" class="btn btn-default" >Login</button>
+            <button type="/signup" class="btn btn-default" >Signup</button>
           </form>
         </div>
         <div class="modal-footer">
           <button type="/Login" class="btn btn-default" data-dismiss="modal">close</button>
+          <button type="signup" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">login</button>
+            <a href="/login" class="btn btn-secondary my-2">Login</a>
         </div>
       </div>
       
@@ -80,14 +76,11 @@
   {{!-- End of modal --}}
     </div>
   </nav>
-
-  <header class="hero">
-    <h1 class="app-title"><a href="/"></a></h1>
-  </header>
   <main class="col-auto">
     {{{body}}}
-  </main> 
+  </main>
 
+<body class="flex-column min-100-vh">
   <footer class="flex-row justify-center">
     &copy; The Art Space
   </footer>
