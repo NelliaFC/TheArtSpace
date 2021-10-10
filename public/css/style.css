@@ -1,0 +1,13 @@
+.navbar .navbar-nav>li {
+    float: left;
+}
+
+.navbar .navbar-nav>li {
+    display: inline;
+}
+
+.navbar .navbar-nav>li {
+    display: block;
+    float: left;
+    vertical-align: top
+}
