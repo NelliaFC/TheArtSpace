@@ -89,7 +89,7 @@ router.get("/signup", (req, res) => {
 router.get("/homepage", (req, res) => {
     res.render('hompage')
 })
-router.get("#homepage", (req, res) => {
+router.get("/homepage", (req, res) => {
     res.render('logout')
 })
 module.exports = router;
