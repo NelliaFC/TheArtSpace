@@ -1,12 +1,16 @@
 const path = require("path");
 const express = require("express");
-const session = require("express-session");
+const session = require("express-session");n
 const exphbs = require("express-handlebars");
 const helpers = require('./utils/helpers');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, '/'));
+}
+);
 //Helpers for Handlebars
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
