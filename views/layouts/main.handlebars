@@ -12,11 +12,23 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/bootstrapTheme.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">The Art Space</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="li-inline nav-item"><a href="/homepage">Homepage</a></li>
+        <li class="li-inline nav-item"><a href="/gallery">Gallery</a></li>
+        <li class="li-inline nav-item"><a href="/login">Login</a></li>
+        <li class="li-inline nav-item"><a href="/signup" >Signup</a></li> 
+        <li class="li-inline nav-item"><a href="#homepage" >logout</a></li> 
+      </ul>
+</nav>
 
 </head>
 <header class="hero">
@@ -28,18 +40,13 @@
     </div>
     <h1 class="app-title"><a href="/"></a></h1>
   </header>
-    <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/homepage">The Art Space</a>
-      </div>
-      <ul class="nav navbar-nav" class="float-left" >
-        <li class="li-inline nav-item"><a href="/homepage">Homepage</a></li>
-        <li class="li-inline nav-item"><a href="/Gallery">Gallery</a></li>
-        <li class="li-inline nav-item"><a href="/login">Login</a></li>
-        <li class="li-inline nav-item"><a href="/signup" >Signup</a></li> 
-        <li class="li-inline nav-item"><a href="/logout" >logout</a></li> 
-      </ul>
+  <main class="col-auto">
+    {{{body}}}
+  </main>
+
+<body class="flex-column min-100-vh">
+
+  
         <!-- Start of Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -47,7 +54,7 @@
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <button type="/login" class="close" data-dismiss="modal">&times;</button>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-user">Login</h4>
         </div>
         <div class="modal-body">
@@ -61,13 +68,11 @@
               <label for="pass">Password:</label>
               <input name="pass" type="password" class="form-control" id="pass">
             </div>
-            <button type="/signup" class="btn btn-default" >Signup</button>
+            <button type="/login" class="btn btn-default" >Login</button>
           </form>
         </div>
         <div class="modal-footer">
           <button type="/Login" class="btn btn-default" data-dismiss="modal">close</button>
-          <button type="signup" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">login</button>
-            <a href="/login" class="btn btn-secondary my-2">Login</a>
         </div>
       </div>
       
@@ -75,12 +80,15 @@
   </div>
   {{!-- End of modal --}}
     </div>
-  </nav>
+  
+
+  <header class="hero">
+    <h1 class="app-title"><a href="/"></a></h1>
+  </header>
   <main class="col-auto">
     {{{body}}}
-  </main>
+  </main> 
 
-<body class="flex-column min-100-vh">
   <footer class="flex-row justify-center">
     &copy; The Art Space
   </footer>

@@ -5,17 +5,17 @@ const { Artist, Comments, Post, User } = require("../models");
 
 //Get all routes from home page
 
-router.get('/', async (req, res) => {
-  try {
-    const postData = await Post.findAll({
-      include: [User]
-    
-    });
-    const posts = postData.map((post) => post.get({ plain: true }));
-    res.render('gallery', { posts });
-  } catch (err) {
-    res.status(500).json(err);
-  }
+router.get('/', async(req, res) => {
+    try {
+        const postData = await Post.findAll({
+            include: [User]
+
+        });
+        const posts = postData.map((post) => post.get({ plain: true }));
+        res.render('gallery', { posts });
+    } catch (err) {
+        res.status(500).json(err);
+    }
 });
 // router.get("/", (req, res) => {
 
@@ -65,15 +65,15 @@ module.exports = router;
 // })
 
 //Get all routes from home page
-router.get('/', async (req, res) => {
-  try {
-    const postData = await Post.findAll({});
-    const posts = postData.map((post) => post.get({ plain: true }));
-    res.render('gallery', { posts });
-    // res.render('newpost', { user_id: req.session.id });
-  } catch (err) {
-    res.status(500).json(err);
-  }
+router.get('/', async(req, res) => {
+    try {
+        const postData = await Post.findAll({});
+        const posts = postData.map((post) => post.get({ plain: true }));
+        res.render('gallery', { posts });
+        // res.render('newpost', { user_id: req.session.id });
+    } catch (err) {
+        res.status(500).json(err);
+    }
 });
 
 // router.get('/login', (req, res) => {
@@ -82,5 +82,14 @@ router.get('/', async (req, res) => {
 
 router.get("/login", (req, res) => {
     res.render('login')
+})
+router.get("/signup", (req, res) => {
+    res.render('signup')
+})
+router.get("/homepage", (req, res) => {
+    res.render('hompage')
+})
+router.get("#homepage", (req, res) => {
+    res.render('logout')
 })
 module.exports = router;
