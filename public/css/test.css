@@ -1,9 +1,17 @@
-li {
+.navbar li {
+    float: left;
+    padding: 0;
     font-size: 2rem;
-    width: 300px;
-    margin: 4px;
-    padding: 4px;
+    width: 80px;
+    margin: 5px;
+    padding: 0px;
     list-style: none
-    }
-    .midlaner {background-color: #eeeeee}
-    .toplaner {background-color: #ffea00}
+}
+
+.midlaner {
+    background-color: #eeeeee
+}
+
+.toplaner {
+    background-color: #ffea00
+}
