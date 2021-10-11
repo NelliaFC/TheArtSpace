@@ -2,21 +2,14 @@
 
 ## Description
 
-
-
-
-<!-- Move it! is a place where you can find your next job (elevator pitch)
-This app was created with Javascript, JQuery, Bootstrap, & Materialize.
-
 The Art Space is a central hub to discover, engage, and appreciate new and emerging artists and their talents. Artists can sign up for the site and upload their own art. The Art Space is also a gallery to purchase, like, and comment on any particular art piece.  Allowing interaction between the user and any available artist. The application was built using Nodejs, HandleBars, Bootstrap, Sequelize, MySQL and it makes full use of being mobile responsive. 
-
 
 ## Table of Contents
 
 * [Images](#images)
 * [Links](#links)
 * [Contributors](#contributors)
-
+* [Technologies](#technologies)
 * [Usage](#usage)
 
 * [Installation](#installation)
@@ -38,13 +31,13 @@ The Art Space is a central hub to discover, engage, and appreciate new and emerg
 
 ## Contributors
 
-<!--name, role in project, what they did -->
+
 The following team brought this project to life: 
 
-```
+
 Kyla Scott: Created . 
 
-Nellia Fleurova-Char: Created . 
+Nellia Fleurova-Char: Part of the Backend Team. Responcible for API Route set up, Sequel Database set up, troubleshooting and connection. Creation of Models and Seeds for the database, Index.js, Config.js and Server.js. 
 
 Vanessa Nguyen: Created .
 
@@ -53,19 +46,33 @@ Waleed Baig:  Created .
 Guillermo Bernal: Created README.md, styled the page using bootstrap, worked on possible future features. Role was mainly Front-End. 
 ```
 
+## Technologies
+Technologies used in the making of this application: JavaScript, Handlebars, MySQL, Sequelize, HTML, CSS, Bootstrap, Node.js, Express.
 
 ## Usage
 
-<!-- explain to the reader how they are suppose to use the application-->
+Must install Node Modules.
+Must install Express Package Manager.
+Must install Sequelize and MySQL Workbench.
+Recommended:
+install nodemon package
+
+Recommended:
+Install nodemon:
+set up connection to SQL in server.js 
+
+
+
 
 
 ## Installation
 
 To install required dependencies:
+npm install 
+npm i express
 
-```
-npm install
-```
+
+
 
 ## Questions
 
@@ -107,7 +114,7 @@ This project is licensed under MIT.
 
 ## License
 
-This project is licensed under 
+This project is licensed under UT Austin Bootcamp
 
 
 
