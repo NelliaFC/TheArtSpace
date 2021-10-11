@@ -84,7 +84,7 @@ You can check out the rest of our projects here or reach out if you have any que
 * [Kyla Scott](https://github.com/guillermobernal)
   
 
-* [Vaness Nguyen](https://github.com/guillermobernal)
+* [Vanessa Nguyen](https://github.com/guillermobernal)
  
 
 ## License
