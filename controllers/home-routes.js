@@ -5,7 +5,7 @@ const { Artist, Comments, Post, User } = require("../models");
 
 //Get all routes from home page
 
-router.get('/', async(req, res) => {
+router.get('/login', async(req, res) => {
     try {
         const postData = await Post.findAll({
             include: [User]
