@@ -4,7 +4,10 @@
   "description": "An art blog and virtual exhibit for local artists to display their work and for lovers of art to connect to the artists, like, buy, collaborate.",
   "main": "index.js",
   "engines": {                                                                
-    "node": "14.x"                                                       
+    "node": "14.x",
+    "npm": "6.14.14"
+
+
 },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
