@@ -7,10 +7,7 @@ const helpers = require('./utils/helpers');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, '/'));
-}
-);
+
 //Helpers for Handlebars
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
@@ -19,10 +16,6 @@ app.set('view engine', 'handlebars');
 
 const sequelize = require("./config/config.js");
 const SequelizeStore = require('connect-session-sequelize');
-
-
-
-
 
 const sess = {
     secret: 'keyboard cat',
