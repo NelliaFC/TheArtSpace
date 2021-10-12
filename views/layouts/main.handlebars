@@ -6,41 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Art Space</title>
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/css/bootstrapTheme.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<nav class="navbar navbar-default">
+
+</head>
+<body class="flex-column min-100-vh"></body>
+<nav class="navbar navbar-default" class="">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">The Art Space</a>
+        <a class="navbar-brand">The Art Space</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="li-inline nav-item"><a href="/login">Homepage</a></li>
-        <li class="li-inline nav-item"><a href="/">Gallery</a></li>
-        <li class="li-inline nav-item"><a href="/signup" >Signup</a></li> 
-        <li class="li-inline nav-item"><a href="/" >logout</a></li> 
-        <li class="li-inline nav-item"><a href="/" >Add Art</a></li> 
-        <li class="li-inline nav-item"><a href="/" >Add comments</a></li> 
+        <li ><a href="/login">Homepage</a></li>
+        <li ><a href="/signup" >Signup</a></li> 
+        <li ><a href="/login" >logout</a></li> 
+        <li ><a href="/addart" >Add Art</a></li> 
+        <li ><a href="/comments" >Add comments</a></li> 
       </ul>
 </nav>
 
-</head>
-<header class="hero">
-    <div class="jumbotron jumbotron-fluid bg-primary text-white">
-      <div class="container">
-        <h1 class="display-4" class="text-center" >The Art Space</h1>
-        <p class="lead">An art blog and virtual exhibit for local artists to display their work and for lovers of art to to connect to the artists, like, buy, collaborate.</p>
-      </div>
-    </div>
-    <h1 class="app-title"><a href="/"></a></h1>
-  </header>
+
   <main class="col-auto">
     {{{body}}}
   </main>
@@ -48,11 +36,15 @@
 <body class="flex-column min-100-vh">
 
 
-  <footer class="flex-row justify-center">
-    &copy; The Art Space
-  </footer>
+
 </body>
 
+
+
+
+<footer class="flex-row justify-left">
+    &copy; The Art Space
+</footer>
 </html>
 <script src="/"></script>
 

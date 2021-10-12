@@ -1,9 +1,6 @@
-//route to the user page with saved art. 
 const router = require("express").Router();
-const { Post } = require("../models/");
-const withAuth = require("../utils/auth");
-
-
+const sequalize = require("../config/config");
+const { Artist, Comments, Post, User } = require("../models")
 
 const { any } = require("sequelize/types/lib/operators");
 const {User, Post, Comments} = require("../models/user");
@@ -33,5 +30,6 @@ router.get("/:id", (req, res) => {
     });
 });
 module.export = router;
+
 
 
