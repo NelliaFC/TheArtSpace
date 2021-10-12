@@ -47,12 +47,12 @@ Guillermo Bernal: Created README.md, styled the page using bootstrap, worked on 
 ```
 
 ## Technologies
-Technologies used in the making of this application: JavaScript, Handlebars, MySQL, Sequelize, HTML, CSS, Bootstrap, Node.js, Express.
+Technologies used in the making of this application: JavaScript, Handlebars, MySQL, Sequelize, HTML, CSS, Bootstrap, Node.js, express.
 
 ## Usage
 
 Must install Node Modules.
-Must install Express Package Manager.
+Must install express Package Manager.
 Must install Sequelize and MySQL Workbench.
 Recommended:
 install nodemon package

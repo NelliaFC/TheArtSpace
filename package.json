@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "An art blog and virtual exhibit for local artists to display their work and for lovers of art to connect to the artists, like, buy, collaborate.",
   "main": "index.js",
+  "engines": {                                                                
+    "node": "14.x"                                                       
+},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
