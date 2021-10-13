@@ -11,7 +11,6 @@ The Art Space is a central hub to discover, engage, and appreciate new and emerg
 * [Contributors](#contributors)
 * [Technologies](#technologies)
 * [Usage](#usage)
-
 * [Installation](#installation)
 * [Questions](#questions)
 * [License](#license)
@@ -59,8 +58,7 @@ install nodemon package
 
 Recommended:
 Install nodemon:
-set up connection to SQL in server.js 
-
+Set up connection to SQL in server.js 
 
 
 
@@ -104,7 +102,7 @@ This project is licensed under MIT.
   contact email address: test@test.com
 
 * [Nellia Fleurova-Char](https://github.com/NelliaFC)
-  contact email address: test@test.com
+  contact email address: nellia.f.charlton@gmail.com
 
 * [Kyla Scott](https://github.com/guillermobernal)
   contact email address: test@test.com
