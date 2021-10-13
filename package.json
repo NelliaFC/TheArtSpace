@@ -41,8 +41,8 @@
     "nodemon": "^2.0.13",
     "npm": "^7.24.1",
     "sequelize": "^5.22.4"
-  },
-  "devDependencies": {
-    "heroku-postbuild": "npm run build && del-cli ./node_modules/* "
+  }
+  // "devDependencies": {
+  //   "heroku-postbuild": "npm run build && del-cli ./node_modules/* "
 }
-}
+
